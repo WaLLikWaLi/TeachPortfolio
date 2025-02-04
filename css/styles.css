@@ -1,44 +1,128 @@
-/* місце для імпорта шрифтів */
-/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap'); */
-/* місце для підключення шрифтів через @font-face */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* @font-face {
-    font-family: "Bungee Shade";
-    src: url(../assets/fonts-1/BungeeShade-Regular.ttf) format("truetype");
-} */
+a {
+  text-decoration: none;
+  color: #121417;
+}
 
-/* bungee-shade-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Bungee Shade';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts-2/bungee-shade-v13-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('../assets/fonts-2/bungee-shade-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../assets/fonts-2/bungee-shade-v13-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-         url('../assets/fonts-2/bungee-shade-v13-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-         url('../assets/fonts-2/bungee-shade-v13-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-         url('../assets/fonts-2/bungee-shade-v13-latin-regular.svg#BungeeShade') format('svg'); /* Legacy iOS */
-  }
-
-
-h1 {
-  font-size: 120px;
-  /* місце для налаштування шрифта заголовку */
-  font-family: "Bungee Shade", sans-serif;
+ul {
+  list-style: none;
 }
 
 body {
-  height: 100vh;
-  background-color: #3b42d5;
-  color: #faff0e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #121417;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
+
+.container {
+  max-width: 1312px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .header {
+  max-width: 1184px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.main {
+
+.button {
+  border-radius: 12px;
+  padding: 14px 39px;
+  cursor: pointer;
+  font-weight: 700;
 }
-.footer {
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 500px;
+  font-size: 20px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 28px;
+}
+
+.header__nav-registration {
+  background-color: black;
+  color: white;
+}
+.header__nav-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.main__section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main__h1 {
+  font-size: 48px;
+  padding-bottom: 32px;
+  font-weight: 500;
+}
+.main__text {
+  padding-bottom: 64px;
+}
+.main__button {
+  font-size: 18px;
+  padding: 16px 68px;
+  background-color: #9fbaae;
+}
+
+.main__info {
+  padding-left: 64px;
+  padding-right: 108px;
+  padding-top: 98px;
+  padding-bottom: 98px;
+  width: 720px;
+}
+
+.main__img {
+  width: 568px;
+}
+.main__benefits {
+  display: flex;
+  gap: 100px;
+}
+.main__benefits-li {
+  display: flex;
+  gap: 16px;
+  max-width: 220px;
+}
+.main__benefits-number {
+  font-size: 28px;
+  font-weight: 500;
+}
+.main__benefits-text {
+  font-size: 14px;
+  color: #121417b2;
+}
+.main__benefits-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

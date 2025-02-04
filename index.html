@@ -4,17 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeachPortfolio</title>
-    <!-- місце для імпорта шрифтів -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
-    <h1>Test Header</h1>
-
+    <header class="header container">
+      <nav class="header__nav">
+        <a href="#" class="header__logo"
+          ><img src="./assets/ukraine.svg" alt="ukraine flag" width="28px" />
+          <p class="header__logo-text">TeachPortfolio</p></a
+        >
+        <ul class="header__nav-pages">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Teachers</a>
+          </li>
+        </ul>
+        <div>
+          <button class="header__nav-login button">
+            <img src="./assets/log-in-01.svg" alt="" />Log in
+          </button>
+          <button class="header__nav-registration button">Registration</button>
+        </div>
+      </nav>
+    </header>
+    <main class="main container">
+      <section class="main__section">
+        <div class="main__info">
+          <h1 class="main__h1">
+            Unlock your potential with the best language tutors
+          </h1>
+          <p class="main__text">
+            Embark on an Exciting Language Journey with Expert Language Tutors:
+            Elevate your language proficiency to new heights by connecting with
+            highly qualified and experienced tutors.
+          </p>
+          <button class="main__button button">Get started</button>
+        </div>
+        <div class="main__img"><img src="./assets/block.svg" alt="" /></div>
+      </section>
+      <div class="main__benefits-div">
+        <ul class="main__benefits">
+          <li class="main__benefits-li">
+            <p class="main__benefits-number">32,000+</p>
+            <p class="main__benefits-text">Experienced tutors</p>
+          </li>
+          <li class="main__benefits-li">
+            <p class="main__benefits-number">300,000+</p>
+            <p class="main__benefits-text">5-star tutor reviews</p>
+          </li>
+          <li class="main__benefits-li">
+            <p class="main__benefits-number">120+</p>
+            <p class="main__benefits-text">
+              Subjects <br />
+              taught
+            </p>
+          </li>
+          <li class="main__benefits-li">
+            <p class="main__benefits-number">200+</p>
+            <p class="main__benefits-text">
+              Tutor <br />
+              nationalities
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer container"></footer>
   </body>
 </html>
